@@ -1,0 +1,24 @@
+{
+  "name": "@iaminawe/paperclip-dispatcher",
+  "version": "0.1.0",
+  "description": "Agent SDK dispatcher — replaces run-task.sh with proper streaming, error recovery, and Slack delivery.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "0.3.142"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.30",
+    "tsx": "^4.19.4",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}

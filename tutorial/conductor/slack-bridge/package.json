@@ -1,0 +1,23 @@
+{
+  "name": "clawd-slack-bridge",
+  "version": "1.0.0",
+  "description": "Slack bridge for Clawd — routes messages to Claude Code Agent SDK",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "private": true,
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "0.3.142",
+    "@slack/bolt": "^4.6.0",
+    "@slack/rtm-api": "^7.0.4",
+    "pino": "^10.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "typescript": "^6.0.2"
+  }
+}
